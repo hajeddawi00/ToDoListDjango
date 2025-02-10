@@ -4,15 +4,85 @@
     font-family: "Roboto", serif;
 }
 
-/* .container{
-    min-height: 100vh;
+body {
+    background: linear-gradient(45deg, #fae9d2, #F7F6FF, #daf0f9);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+  
+@keyframes gradientAnimation {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
 }
 
-.tasks_card{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
+.container_card {
+    background-color: white;
+    width: 50%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #ced4da;
+}
+
+.filter_buttons {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #cbcccf;
+    text-align: center;
+    min-width: 100px; 
+    transition: 0.3s;
+}
+
+.filter_buttons:hover {
+    background-color: #F1F1F1;
+}
+
+.search_bar:focus {
+    outline: none !important; /* Removes the default blue outline */
+    box-shadow: none !important; /*Removes Bootstrap's default focus effect */
+}
+
+.add_button {
+    width: 50px;
+    background-color: black;
+    border-radius: 10px;
+    border: 0px solid black;
+    padding: 3px 10px;
+}
+
+.add_sign {
+    font-size: 22px;
+    color: white;
+}
+
+.exclamation_sign {
+    font-size: 22px;
+}
+
+.tasks_card {
+    border: 1px solid #ced4da;
+    border-radius: 7px;
+    padding: 10px 10px;
+}
+
+.trash_sign {
+    color: #9CA3AF;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.trash_sign:hover {
+    color: black;
+    background-color: #F3F4F6;
+}
